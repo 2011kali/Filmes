@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Filmes</title>
+    <style>
+        /* Estilos CSS para a página de filmes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('fundo.avif');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .filme {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .filme img {
+            max-width: 100%;
+        }
+        .filme h2 {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .filme p {
+            margin: 5px 0;
+        }
+        .acoes {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .acoes a {
+            background-color: #0077b6;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .icone {
+            margin-right: 5px;
+        }
+        /* Estilos para o banner em movimento */
+        #banner {
+            overflow: hidden;
+            position: relative;
+        }
+        #banner .conteudo {
+            width: 200%;
+            animation: deslizar 10s linear infinite;
+        }
+        @keyframes deslizar {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Filmes</h1>
+    </header>
+    <div id="banner">
+        <div class="conteudo">
+            <!-- Inclua conteúdo do banner aqui (imagens, texto, etc.) -->
+        </div>
+    </div>
+    <main>
+        <div class="filme">
+            <img src="filme1.jpg" alt="Filme 1">
+            <h2>John Wick 4: Baba Yaga</h2>
+            <p>Diretor: Chad Stahelski</p>
+            <p>Gênero: Ação</p>
+            <p>Preço: R$ 9.99</p>
+            <div class="acoes">
+                <a href="cadastro.html"><i class="fas fa-plus icone"></i>Cadastrar</a>
+                <a href="https://youtu.be/gZtmzT9Wgrw?si=-sTXVrQ6T5fVGQpO"><i class="fas fa-play icone"></i>Assistir</a>
+                <a href="https://youtu.be/SaaipeXx1js"><i class="fas fa-shopping-cart icone"></i>Alugar</a>
+            </div>
+        </div>
+        <div class="filme">
+            <img src="filme2.jpg" alt="Filme 2">
+            <h2>Amizade de Férias 2</h2>
+            <p>Diretor: Clay Tarver</p>
+            <p>Gênero: Comédia</p>
+            <p>Preço: R$ 7.99</p>
+            <div class="acoes">
+                <a href="cadastro.html"><i class="fas fa-plus icone"></i>Cadastrar</a>
+                <a href="https://youtu.be/WRJUJES1P5A?si=VCKyqWmo8f1a-NLF"><i class="fas fa-play icone"></i>Assistir</a>
+                <a href="#"><i class="fas fa-shopping-cart icone"></i>Alugar</a>
+            </div>
+        </div>
+        <!-- Adicione mais filmes aqui -->
+    </main>
+</body>
+</html>
